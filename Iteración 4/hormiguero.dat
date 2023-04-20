@@ -1,0 +1,56 @@
+#s:11|Entrada|1|    _    |\  \___  |\   mo'\_|\ @      | \   /\__|Entrada|Entrada al castillo |
+#s:121|Pasillo 1|1|         |         |         |         |         |Pasillo|Pasillo tenebroso de la entrada al castillo.|
+#s:122|Pasillo 2|1|  ___   _|_/   \_/ |     o 0 |mo'_ 0o8o|__/ \   /|Pasillo|Pasillo central con un camino largo y uno corto|
+#s:123|Pasillo 3|1|  /  /   | /   \__ |     mo'\| _ @  _ \|  \__// /|Pasillo|Pasillo con el fantasma y no se puede continuar porque está bloqueado|
+#s:124|Pasillo 4|1|         |         |         |         |         |Pasillo|Pasillo previo a la despensa|
+#s:125|Pasillo 5|1|  ___   _|_/   \_/ |     o 0 |mo'_ 0o8o|__/ \___/|Pasillo|Pasillo al lado del central, justo a su derecha|
+#s:126|Pasillo 6|1|  ___   _|_/   \_/ |     o 0 |mo'_ 0o8o|__/ \___/|Pasillo|Pasillo alargado y angosto|
+#s:127|Pasillo 7|1|  ___   _|_/   \_/ |     o 0 |mo'_ 0o8o|__/ \___/|Pasillo|Pasillo previo al oscuro agujero|
+#s:13|Despensa|1|         |         |         |         |         |Lacena|Despensa con objetos necesarios para sobrevivir|
+#s:14|Agujero|0|  ___    |_/   \__ |    o o )|mo^ _ 0o]|__/ \___)|Agujero a despensa|Agujero misterioso sin posibilidad de retroceder|
+
+#o:20|Grano|122|Grano de trigo|1|-1|-1|0|0|
+#o:21|Ramita|125|Ramita de manzano|1|-1|-1|0|0|
+#o:22|Hoja|124|Hoja de arbol|1|-1|-1|0|0|
+#o:23|Petalo|13|Petalo de flor|1|-1|-1|0|0|
+#o:2|Candelabro|122|Candelabro tenebroso|1|-1|-1|0|0|
+#o:7|Escalera|122|Escalera que ayuda a moverse|1|-1|16|0|0|
+
+_#o:1|Espejo|location|shortdesc
+_#o:3|Lampara|location|shortdesc
+_#o:4|Armario|location|shortdesc
+_#o:5|Llave|location|shortdesc
+_#o:6|Pergamino|location|shortdesc
+_#o:7|Cerilla|location|shortdesc
+_#o:8|Escoba|location|shortdesc
+_#o:9|Espada|location|shortdesc
+_#o:10|Agua|location|shortdesc
+_#o:11|Lata|location|shortdesc
+_#o:12|Tijera|location|shortdesc
+_#o:13|Ortiga|location|shortdesc
+_#o:14|Mosquito|location|shortdesc
+_#o:15|Manzana|location|shortdesc
+
+#p:1|explorer|11|5|3|
+
+#e:2|ghost|123|5|
+
+#l:1|Entrada|11|121|1|0|
+#l:2|pasillo1-entrada|121|11|0|0|
+#l:3|pasillo1-pasillo2|121|122|1|0|
+#l:4|pasillo2-pasillo1|122|121|0|0|
+#l:5|pasillo2-pasillo5|122|125|2|0|
+#l:6|pasillo5-pasillo2|125|122|3|0|
+#l:7|pasillo5-pasillo6|125|126|2|0|
+#l:8|pasillo6-pasillo5|126|125|3|0|
+#l:9|pasillo6-pasillo7|126|127|2|0|
+#l:10|pasillo7-pasillo6|127|126|3|0|
+#l:11|pasillo7-agujero|127|14|2|0|
+#l:12|agujero-pasillo7|14|127|3|0|
+#l:13|agujero-despensa|14|13|1|0|
+#l:14|pasillo2-pasillo3|122|123|1|0|
+#l:15|pasillo3-pasillo2|123|122|0|0|
+#l:16|pasillo3-pasillo4|123|124|1|1|
+#l:17|pasillo4-pasillo3|124|123|0|0|
+#l:18|pasillo4-despensa|124|13|1|0|
+#l:19|despensa-pasillo4|13|124|0|0|

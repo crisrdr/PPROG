@@ -1,0 +1,12 @@
+Move s: OK
+Unknown: ERROR
+Move n: OK
+Move n: ERROR
+Move s: OK
+Move s: OK
+Move e: OK
+Move w: OK
+Take grano: OK
+Move e: OK
+Drop grano: ERROR
+Exit: OK
