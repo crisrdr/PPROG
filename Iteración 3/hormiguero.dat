@@ -1,0 +1,40 @@
+#s:11|Entrada|    _    |\  \___  |\   mo'\_|\ @      | \   /\__|Entrada|
+#s:121|Pasillo 1|         |         |         |         |         |Pasillo|
+#s:122|Pasillo 2|  ___   _|_/   \_/ |     o 0 |mo'_ 0o8o|__/ \   /|Pasillo|
+#s:123|Pasillo 3|  /  /   | /   \__ |     mo'\| _ @  _ \|  \__// /|Pasillo|
+#s:124|Pasillo 4|         |         |         |         |         |Pasillo|
+#s:125|Pasillo 5|  ___   _|_/   \_/ |     o 0 |mo'_ 0o8o|__/ \___/|Pasillo|
+#s:126|Pasillo 6|  ___   _|_/   \_/ |     o 0 |mo'_ 0o8o|__/ \___/|Pasillo|
+#s:127|Pasillo 7|  ___   _|_/   \_/ |     o 0 |mo'_ 0o8o|__/ \___/|Pasillo|
+#s:13|Despensa|         |         |         |         |         |Lacena|
+#s:14|Agujero|  ___    |_/   \__ |    o o )|mo^ _ 0o]|__/ \___)|Agujero a despensa|
+
+#o:20|Grano|122|Grano de trigo|
+#o:21|Ramita|125|Ramita de manzano|
+#o:22|Hoja|124|Hoja de arbol|
+#o:23|Petalo|13|Petalo de flor|
+
+
+#p:1|ant|11|5|3|
+
+#e:2|spider|123|5|
+
+#l:1|Entrada|11|121|1|0|
+#l:2|pasillo1-entrada|121|11|0|0|
+#l:3|pasillo1-pasillo2|121|122|1|0|
+#l:4|pasillo2-pasillo1|122|121|0|0|
+#l:5|pasillo2-pasillo5|122|125|2|0|
+#l:6|pasillo5-pasillo2|125|122|3|0|
+#l:7|pasillo5-pasillo6|125|126|2|0|
+#l:8|pasillo6-pasillo5|126|125|3|0|
+#l:9|pasillo6-pasillo7|126|127|2|0|
+#l:10|pasillo7-pasillo6|127|126|3|0|
+#l:11|pasillo7-agujero|127|14|2|0|
+#l:12|agujero-pasillo7|14|127|3|0|
+#l:13|agujero-despensa|14|13|1|0|
+#l:14|pasillo2-pasillo3|122|123|1|0|
+#l:15|pasillo3-pasillo2|123|122|0|0|
+#l:16|pasillo3-pasillo4|123|124|1|1|
+#l:17|pasillo4-pasillo3|124|123|0|0|
+#l:18|pasillo4-despensa|124|13|1|0|
+#l:19|despensa-pasillo4|13|124|0|0|

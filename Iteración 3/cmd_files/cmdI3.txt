@@ -1,0 +1,16 @@
+Next: OK
+Next: OK
+Inspect grano: OK
+Next: OK
+Inspect s: OK
+Move n: OK
+Unknown: ERROR
+Move n: OK
+Unknown: ERROR
+Move n: OK
+Move s: OK
+Move s: OK
+Move w: ERROR
+Move e: OK
+Move e: OK
+Exit: OK
